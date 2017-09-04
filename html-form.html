@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Ubermelon Order Form</title>
+</head>
+<body>
+    <h1>Order!</h1>
+    <h3>Prices</h3>
+    <table>
+        <tr>
+            <th>Melon Name</th>
+            <th>Price per lb.</th>
+        </tr>
+        <tr>
+            <td>Watermelon</td>
+            <td>$1.59</td>
+        </tr>
+            <td>Honeydew</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+            <td>Canteloupe</td>
+            <td>$1.29</td>
+        </tr>
+        <tr>
+            <td>Crenshaw</td>
+            <td>$2.19</td>
+        </tr>
+        <tr>
+            <td>Canary</td>
+            <td>$11.99</td>
+        </tr>
+    </table>
+
+    <p>Place your orders here! You know you want to</p>
+
+    <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET" autocomplete="on">
+        First Name:<input type="text" name="firstname" size="50"><br>
+        Last Name:<input type="text" name="lastname" size="50"><br>
+        Melon Type:
+            <select name="melontype">
+                <option value="watermelon">Watermelon</option>
+                <option value="honeydew">Honeydew</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="crenshaw">Crenshaw</option>
+                <option value="canary">Canary</option>
+            </select><br>
+
+        Quantity*:<input type="text" name="quantity"><br>
+
+        Delivery Time:
+        <input type="radio" name="ampm" value="am">AM
+        <input type="radio" name="ampm" value="pm">PM
+        <input type="radio" name="ampm" value="wat">WAT<br>
+
+        Returning Customer:
+        <input type="radio" name="yesno" value="yes">Yes
+        <input type="radio" name="yesno" value="no">No<br>
+
+        For Statistical Purposes:
+        <input type="checkbox" name="animal" value="dog">Dog
+        <input type="checkbox" name="animal" value="cat">Cat
+        <input type="checkbox" name="animal" value="hedgehog">Hedgehog
+        <label><input type="checkbox" name="animal" value="balloonicorn">Balloonicorn</label>
+        <input type="checkbox" name="animal" value="yak">Yak<br><br>
+
+        <em>Return Customer? Log-in</em><br>
+        <b>Username:</b><input type="text" name="username"><br>
+        <b>Password:</b><input type="password" name="psw"><br><br>
+
+    </form>
+
+        <input type="submit">
+
+</body>
+        <footer>*Quantities are given by the flat.<br><br>
+
+            <a href="https://en.wikipedia.org/wiki/Melon">
+                    <img src="https://www.mypatriotsupply.com/v/vspfiles/photos/ORG_MELON_CRENSHAW-2.jpg" alt="<3" width="128" height="128">
+                    <img src="https://static.squarespace.com/static/51d1a88ae4b065321a7c14cc/t/528f6989e4b0ef5d1e4a343d/1385130377702/shutterstock_126068165.jpg" alt=":)" width="128" height="128">
+            </a><br><br>
+            <em>Thank you for doing business with us!</em>
+
+        </footer>
+
+<br><br>
+
+&copy; &trade; MelonLand LLc.
+
+</html>
+
+
+
